@@ -1,0 +1,93 @@
+.main-list p{
+  cursor: pointer;
+  transition: .3s;
+}
+
+ul.lang-box {
+  display: none;
+
+  position: absolute;
+  left: -16px;
+  top: 45px;
+  z-index: 5;
+
+  background-color: #1b1b1b;
+  border-top: 1px solid cyan;
+  width: 130px;
+  border-radius: 5px;
+}
+
+li.lang:hover ul.lang-box {
+  display: block;
+}
+
+ul.lang-box li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 8px;
+  text-align: start;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  transition: 0.15s;
+}
+
+ul.lang-box li:hover {
+  background-color: #151515;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.myheader .ali {
+  background-color: teal;
+}
+
+.flex {
+  display: flex;
+}
+
+.signout {
+  all: unset;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.signout:hover {
+  color: cyan;
+}
+
+.main-list .sub-ul {
+  display: none;
+}
+
+.main-list .main-link {
+  margin-right: 15px;
+}
+
+.hide-when-mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ==================
+    3. header of mobile
+===================== */
+.show-when-mobile {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .show-when-mobile {
+    display: block;
+  }
+
+  .hide-when-mobile {
+    display: none;
+  }
+
+  .show-on-click{
+    display: none;
+  }
+}
